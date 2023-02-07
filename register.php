@@ -148,6 +148,63 @@ include 'files/php/main.php'
                     }
                 }
             </script>
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] == POST)
+            {
+                $con = ConnectDB();
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $password2 = $_POST['password2'];
+                $errors = [];
+                $registeredEmails = CheckRegisteredEmails();
+                if ($password !== $password2) {
+                    $errors.push("A két jelszó nem egyezik!");
+                    exit;
+                }
+                if (!$email) {
+                    $errors.push("Az e-mail cím nem lehet üres!");
+                    exit;
+                }
+                if (strpos($email, "@") === false || strpos($email, ".") === false) {
+                    $errors.push("Az e-mail cím nem megfelelő formátumú!");
+                    exit;
+                }
+                if (strlen($email) > 256) {
+                    $errors.push("Az e-mail cím túl hosszú!");
+                    exit;
+                }
+                if (in_array($email, $registeredEmails)) {
+                    $errors.push("Az e-mail cím már regisztrálva van!");
+                    exit;
+                }
+                if (strlen($password) < 8) {
+                    $errors.push("A jelszónak legalább 8 karakter hosszúnak kell lennie!");
+                    exit;
+                }
+                if (!preg_match("/[a-z]/", $password)) {
+                    $errors.push("A jelszónak tartalmaznia kell legalább egy kisbetűt!");
+                    exit;
+                }
+                if (!preg_match("/[A-Z]/", $password)) {
+                    $errors.push("A jelszónak tartalmaznia kell legalább egy nagybetűt!");
+                    exit;
+                }
+                if (!preg_match("/\d/", $password)) {
+                    $errors.push("A jelszónak tartalmaznia kell legalább egy számot!");
+                    exit;
+                }
+                $email = mysqli_real_escape_string($con, $email);
+                $password = mysqli_real_escape_string($con, $password);
+                $password = SaltPassword($password);
+                $password = sha1($password);
+                $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
+                if (mysqli_query($con, $sql)) {
+                    echo "<p>Sikeres regisztráció!</p>";
+                } else {
+                    echo "<p>Sikertelen regisztráció!</p>";
+                }
+            }
+            ?>
         </div>
     </div>
 </div>

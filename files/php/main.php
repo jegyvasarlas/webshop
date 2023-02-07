@@ -40,4 +40,14 @@ function CheckRegisteredEmails()
     return $output;
 }
 
+function SaltPassword($password)
+{
+    $salt = "";
+    $saltLength = 10;
+    for ($i = 0; $i < $saltLength; $i++) {
+        $salt .= chr(rand(33, 126));
+    }
+    $password = $password . $salt;
+    return $password;
+}
 ?>

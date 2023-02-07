@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d4a622a-a1dd-4d4e-990b-d2a66860f54a" name="Changes" comment="Initial commit">
+    <list default="true" id="8d4a622a-a1dd-4d4e-990b-d2a66860f54a" name="Changes" comment="Safe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/php/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/php/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad0bcc41-c893-411c-92e7-8d5dbc01aada" name="Changes" comment="Initial commit" />
+      <changelist id="8d4a622a-a1dd-4d4e-990b-d2a66860f54a" name="Changes" comment="Initial commit" />
       <created>1675763314455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -80,6 +82,7 @@
       <workItem from="1675765302129" duration="444000" />
       <workItem from="1675765815567" duration="549000" />
       <workItem from="1675770894873" duration="3586000" />
+      <workItem from="1675778697276" duration="738000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675766946059</created>
@@ -88,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675766946059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Safe">
+      <created>1675778926135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675778926135</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Safe">
+      <created>1675778959703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675778959703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +127,7 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Safe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Safe" />
   </component>
 </project>
