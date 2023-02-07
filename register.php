@@ -21,7 +21,6 @@ include 'files/php/main.php'
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
                 <a href="" class="nav-item nav-link">Termekek</a>
-                <a href="" class="nav-item nav-link">Kapcsolat</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link">Bejelentkezés</a>
@@ -33,13 +32,13 @@ include 'files/php/main.php'
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Regisztracio</h1>
+            <h1>Regisztráció</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" onsubmit="return validate()">
-                <label for="email">E-mail cim</label>
+                <label for="email">E-mail cím</label>
                 <input type="text" name="email" id="email" class="form-control">
                 <label for="password">Jelszó</label>
                 <input type="password" name="password" id="password" class="form-control">
@@ -57,9 +56,8 @@ include 'files/php/main.php'
                     let errors = [];
                     let registeredEmails = <?php echo json_encode(CheckRegisteredEmails()); ?>;
 
-                    // Check if the two passwords match
                     if (password !== password2) {
-                        errors.push("The passwords do not match!");
+                        errors.push("A két jelszó nem egyezik!");
                         document.getElementById("password").style.borderColor = "#E34234";
                         document.getElementById("password2").style.borderColor = "#E34234";
                         bool = false;
@@ -67,47 +65,37 @@ include 'files/php/main.php'
                         document.getElementById("password").style.borderColor = "#ccc";
                         document.getElementById("password2").style.borderColor = "#ccc";
                     }
-
-                    // Check if email is not empty
                     if (!email) {
-                        errors.push("Email cannot be empty!");
+                        errors.push("Az e-mail cím nem lehet üres!");
                         document.getElementById("email").style.borderColor = "#E34234";
                         bool = false;
                     } else {
                         document.getElementById("email").style.borderColor = "#ccc";
                     }
-
-                    // Check if email is valid
                     if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
-                        errors.push("Invalid email address!");
+                        errors.push("Az e-mail cím nem megfelelő formátumú!");
                         document.getElementById("email").style.borderColor = "#E34234";
                         bool = false;
                     } else {
                         document.getElementById("email").style.borderColor = "#ccc";
                     }
-
-                    // Check if email length is less than or equal to 256 characters
                     if (email.length > 256) {
-                        errors.push("Email address is too long!");
+                        errors.push("Az e-mail cím túl hosszú!");
                         document.getElementById("email").style.borderColor = "#E34234";
                         bool = false;
                     } else {
                         document.getElementById("email").style.borderColor = "#ccc";
                     }
-
-                    // Check if email has already been registered
                     if (registeredEmails.includes(email)) {
-                        errors.push("Email address has already been registered!");
+                        errors.push("Az e-mail cím már regisztrálva van!");
                         document.getElementById("email").style.borderColor = "#E34234";
                         bool = false;
                     } else {
                         document.getElementById("email").style.borderColor = "#ccc";
                     }
-
-                    // Check if password has at least one lowercase letter, one uppercase letter, one number, and 8 characters
                     if (password === password2) {
                         if (!/[a-z]/.test(password)) {
-                            errors.push("Password must contain at least one lowercase letter!");
+                            errors.push("A jelszónak tartalmaznia kell legalább egy kisbetűt!");
                             document.getElementById("password").style.borderColor = "#E34234";
                             document.getElementById("password2").style.borderColor = "#E34234";
                             bool = false;
@@ -116,7 +104,7 @@ include 'files/php/main.php'
                             document.getElementById("password2").style.borderColor = "#ccc";
                         }
                         if (!/[A-Z]/.test(password)) {
-                            errors.push("Password must contain at least one uppercase letter!");
+                            errors.push("A jelszónak tartalmaznia kell legalább egy nagybetűt!");
                             document.getElementById("password").style.borderColor = "#E34234";
                             document.getElementById("password2").style.borderColor = "#E34234";
                             bool = false;
@@ -125,7 +113,7 @@ include 'files/php/main.php'
                             document.getElementById("password2").style.borderColor = "#ccc";
                         }
                         if (!/\d/.test(password)) {
-                            errors.push("Password must contain at least one number!");
+                            errors.push("A jelszónak tartalmaznia kell legalább egy számot!");
                             document.getElementById("password").style.borderColor = "#E34234";
                             document.getElementById("password2").style.borderColor = "#E34234";
                             bool = false;
@@ -134,7 +122,7 @@ include 'files/php/main.php'
                             document.getElementById("password2").style.borderColor = "#ccc";
                         }
                         if (password.length < 8) {
-                            errors.push("Password must be at least 8 characters long!");
+                            errors.push("A jelszónak legalább 8 karakter hosszúnak kell lennie!");
                             document.getElementById("password").style.borderColor = "#E34234";
                             document.getElementById("password2").style.borderColor = "#E34234";
                             bool = false;
@@ -143,7 +131,7 @@ include 'files/php/main.php'
                             document.getElementById("password2").style.borderColor = "#ccc";
                         }
                         if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
-                            errors.push("Password must contain at least one special character!");
+                            errors.push("A jelszónak tartalmaznia kell legalább egy speciális karaktert!");
                             document.getElementById("password").style.borderColor = "#E34234";
                             document.getElementById("password2").style.borderColor = "#E34234";
                             bool = false;
