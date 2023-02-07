@@ -5,10 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0bcc41-c893-411c-92e7-8d5dbc01aada" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/files/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/php/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/php/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,27 +95,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/php/php.ini",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/php/php.ini&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\webshop" />
@@ -75,7 +123,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="66413a99-081d-4a3d-a582-e8265e60b4bc" name="Changes" comment="" />
+      <changelist id="ad0bcc41-c893-411c-92e7-8d5dbc01aada" name="Changes" comment="Initial commit" />
       <created>1675763314455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,7 +131,16 @@
       <workItem from="1675763315553" duration="1618000" />
       <workItem from="1675765302129" duration="444000" />
       <workItem from="1675765815567" duration="549000" />
+      <workItem from="1675770894873" duration="3586000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1675766946059</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675766946059</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +161,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

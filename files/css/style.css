@@ -1,0 +1,6 @@
+nav.navbar-light.navbar.navbar-expand-lg {
+    background-color: #eee;
+}
+a.nav-item.nav-link.active {
+    font-weight: bold;
+}

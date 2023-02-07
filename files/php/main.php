@@ -23,4 +23,21 @@ function Filter($con, $data)
     return $data;
 }
 
+function CheckRegisteredEmails()
+{
+    $con = ConnectDB();
+    $sql = "SELECT email FROM users";
+    $result = $con->query($sql);
+    $output = array();
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            array_push($output, $row["email"]);
+        }
+    } else {
+        $output = "0 results";
+    }
+    CloseDB($con);
+    return $output;
+}
+
 ?>
