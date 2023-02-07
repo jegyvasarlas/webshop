@@ -149,7 +149,7 @@ include 'files/php/main.php'
                 }
             </script>
             <?php
-            if ($_SERVER['REQUEST_METHOD'] == POST)
+            if ($_SERVER['REQUEST_METHOD'] == 'POST')
             {
                 $con = ConnectDB();
                 $email = $_POST['email'];
