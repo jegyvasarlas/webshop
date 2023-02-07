@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^login/?$ login.php [NC,L]
+RewriteRule ^logout/?$ files/php/logout.php [NC,L]
+RewriteRule ^register/?$ register.php [NC,L]
+RewriteRule .* error.php [NC,L]
+
