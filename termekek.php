@@ -1,7 +1,5 @@
 <?php
 include 'files/php/main.php';
-?>
-<?php
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     if (time() - $_SESSION['last_activity'] > 1800) {
         $_SESSION['loggedin'] = false;
@@ -32,8 +30,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link active">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="index.php" class="nav-item nav-link">Főoldal</a>
+                <a href="termekek.php" class="nav-item nav-link active">Termekek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link">Bejelentkezés</a>
@@ -50,8 +48,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link active">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="index.php" class="nav-item nav-link">Főoldal</a>
+                <a href="termekek.php" class="nav-item nav-link active">Termekek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="rendeleseim.php" class="nav-item nav-link">Rendeléseim</a>
@@ -64,19 +62,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
 }
 ?>
 <div class="container" style="margin-top: 20px">
-    <?php
-    if (isset($_SESSION['successfulRegister']) && $_SESSION['successfulRegister'] == true){
-        echo '<div class="alert alert-success"><strong>Siker!</strong> Sikeres regisztráció</div>';
-        $_SESSION['successfulRegister'] = false;
-    }
-    if (isset($_SESSION['successfulLogin']) && $_SESSION['successfulLogin'] == true) {
-        echo '<div class="alert alert-success"><strong>Siker!</strong> Sikeres bejelentkezés</div>';
-        $_SESSION['successfulLogin'] = false;
-    }
-    ?>
     <div class="row">
         <div class="col-12">
-            <h1>Üdvözöllek a webáruházban!</h1>
+            <h1>Termékeink</h1>
         </div>
     </div>
     <div class="row">

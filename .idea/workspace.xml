@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d4a622a-a1dd-4d4e-990b-d2a66860f54a" name="Changes" comment="Safe">
+      <change afterPath="$PROJECT_DIR$/files/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/php/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kosar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rendeleseim.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/termekek.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/files/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/php/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/files/php/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +24,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

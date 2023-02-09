@@ -1,6 +1,12 @@
 <?php
 include 'files/php/main.php'
 ?>
+<?php
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +35,7 @@ include 'files/php/main.php'
         </div>
     </div>
 </nav>
-<div class="container">
+<div class="container" style="margin-top: 20px">
     <div class="row">
         <div class="col-12">
             <h1>Bejelentkezes</h1>
@@ -42,9 +48,41 @@ include 'files/php/main.php'
                 <input type="text" name="email" id="email" class="form-control">
                 <label for="password">Jelszó</label>
                 <input type="password" name="password" id="password" class="form-control">
-                <button type="submit" class="btn btn-primary" name="login">Bejelentkezes</button>
+                <button type="submit" class="btn btn-primary" name="login" style="margin-top: 10px">Bejelentkezés</button>
+                <p style="margin-top: 10px">Nincs még fiókja? <a class="actual-link" href="register.php">Regisztráljon!</a></p>
             </form>
         </div>
+        <?php
+        if ($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
+            $con = ConnectDB();
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $email = mysqli_real_escape_string($con, $email);
+            $password = mysqli_real_escape_string($con, $password);
+            $password = SaltPassword($password);
+            $password = sha1($password);
+            $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+            $result = $con->query($sql);
+            if ($result->num_rows > 0) {
+                $_SESSION['successfulLogin'] = true;
+                $_SESSION['email'] = $email;
+                $_SESSION['loggedin'] = true;
+                $_SESSION['last_activity'] = time();
+                $_SESSION['timeout'] = time();
+                echo "<script>window.location.href = 'index.php';</script>";
+            } else {
+                echo "<div class='alert alert-danger' style='margin-top: 10px'><strong>Hiba!</strong> Hibás e-mail cím vagy jelszó!</div>";
+            }
+            if(isset($_SESSION['timeout'])) {
+                $session_life = time() - $_SESSION['timeout'];
+                if($session_life > 1800) {
+                    $_SESSION['loggedin'] = false;
+                    session_destroy();
+                }
+            }
+        }
+        ?>
     </div>
 </div>
 </body>

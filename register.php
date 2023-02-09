@@ -1,6 +1,12 @@
 <?php
 include 'files/php/main.php'
 ?>
+<?php
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header("Location: index.php");
+    die();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +35,7 @@ include 'files/php/main.php'
         </div>
     </div>
 </nav>
-<div class="container">
+<div class="container" style="margin-top: 20px">
     <div class="row">
         <div class="col-12">
             <h1>Regisztráció</h1>
@@ -44,7 +50,8 @@ include 'files/php/main.php'
                 <input type="password" name="password" id="password" class="form-control">
                 <label for="password2">Jelszó újra</label>
                 <input type="password" name="password2" id="password2" class="form-control">
-                <button type="submit" class="btn btn-primary" name="register">Regisztráció</button>
+                <button type="submit" class="btn btn-primary" name="register" style="margin-top: 10px">Regisztráció</button>
+                <p style="margin-top: 10px">Van már fiókja? <a class="actual-link" href="login.php">Jelentkezzen be!</a></p>
             </form>
             <p id="errorsp" style="color: #E34234"></p>
             <script>
@@ -155,42 +162,32 @@ include 'files/php/main.php'
                 $email = $_POST['email'];
                 $password = $_POST['password'];
                 $password2 = $_POST['password2'];
-                $errors = [];
                 $registeredEmails = CheckRegisteredEmails();
                 if ($password !== $password2) {
-                    $errors.push("A két jelszó nem egyezik!");
                     exit;
                 }
                 if (!$email) {
-                    $errors.push("Az e-mail cím nem lehet üres!");
                     exit;
                 }
                 if (strpos($email, "@") === false || strpos($email, ".") === false) {
-                    $errors.push("Az e-mail cím nem megfelelő formátumú!");
                     exit;
                 }
                 if (strlen($email) > 256) {
-                    $errors.push("Az e-mail cím túl hosszú!");
                     exit;
                 }
                 if (in_array($email, $registeredEmails)) {
-                    $errors.push("Az e-mail cím már regisztrálva van!");
                     exit;
                 }
                 if (strlen($password) < 8) {
-                    $errors.push("A jelszónak legalább 8 karakter hosszúnak kell lennie!");
                     exit;
                 }
                 if (!preg_match("/[a-z]/", $password)) {
-                    $errors.push("A jelszónak tartalmaznia kell legalább egy kisbetűt!");
                     exit;
                 }
                 if (!preg_match("/[A-Z]/", $password)) {
-                    $errors.push("A jelszónak tartalmaznia kell legalább egy nagybetűt!");
                     exit;
                 }
                 if (!preg_match("/\d/", $password)) {
-                    $errors.push("A jelszónak tartalmaznia kell legalább egy számot!");
                     exit;
                 }
                 $email = mysqli_real_escape_string($con, $email);
@@ -199,9 +196,10 @@ include 'files/php/main.php'
                 $password = sha1($password);
                 $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
                 if (mysqli_query($con, $sql)) {
-                    echo "<p>Sikeres regisztráció!</p>";
+                    $_SESSION['successfulRegister'] = true;
+                    echo '<script>window.location.href = "index.php";</script>';
                 } else {
-                    echo "<p>Sikertelen regisztráció!</p>";
+                    echo '<div class="alert alert-danger"><strong>Hiba!</strong> Sikertelen regisztráció</div>';
                 }
             }
             ?>

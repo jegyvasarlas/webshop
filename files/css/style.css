@@ -4,3 +4,15 @@ nav.navbar-light.navbar.navbar-expand-lg {
 a.nav-item.nav-link.active {
     font-weight: bold;
 }
+a.actual-link{
+    color: #0d6efd;
+    text-decoration: none;
+}
+a.actual-link:hover{
+    color: #c10dfd !important;
+    text-decoration: none;
+}
+a.actual-link:visited{
+    color: #0d6efd;
+    text-decoration: none;
+}
