@@ -20,7 +20,7 @@ include 'files/php/main.php'
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="" class="nav-item nav-link">Kapcsolat</a>
+                <a href="" class="nav-item nav-link">Termekek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link active">Bejelentkezés</a>
