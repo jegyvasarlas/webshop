@@ -32,7 +32,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-item nav-link" disabled>Egyenleg: <?php echo Egyenleg(); ?> Ft</a>
@@ -46,12 +46,40 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
 <div class="container" style="margin-top: 20px">
     <div class="row">
         <div class="col-12">
-            <h1>Rendeleseim</h1>
+            <h1>Rendeléseim</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <h2>Rendeleseim</h2>
+            <?php
+            $vevo = $_SESSION['email'];
+            $con = ConnectDB();
+            $sql = "SELECT nev, darab, ar, ido FROM rendelesek WHERE vevo = '$vevo' ORDER BY ido DESC";
+            $result = mysqli_query($con, $sql);
+            if (mysqli_num_rows($result) > 0) {
+                echo "<table class='table table-striped table-hover table-bordered'>
+                <thead>
+                <tr>
+                <th>Termék neve</th>
+                <th>Darabszám</th>
+                <th>Ár</th>
+                <th>Dátum</th>
+                </tr>
+                </thead>
+                <tbody>";
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<tr>";
+                    echo "<td>" . $row['nev'] . "</td>";
+                    echo "<td>" . $row['darab'] . "</td>";
+                    echo "<td>" . $row['ar'] . "</td>";
+                    echo "<td>" . $row['ido'] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</tbody></table></div></div>";
+            } else {
+                echo "<div class='alert alert-danger' role='alert'>Nincs megjeleníthető rendelés!</div>";
+            }
+            ?>
         </div>
     </div>
 </div>
