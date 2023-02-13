@@ -70,25 +70,28 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location.href = 'monitorok.php'" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding">
             <h2 class="text-center">Laptopok</h2>
             <br>
             <img src="files/img/laptop.png">
+            <h3 class="text-center" style="color: red"><strong>Jelenleg nem elérhető!</strong></h3>
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location.href = 'monitorok.php'" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
             <h2 class="text-center">Monitorok</h2>
             <br>
             <img src="files/img/monitor.png">
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location()" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding">
             <h2 class="text-center">Billentyűzetek</h2>
             <br>
             <img src="files/img/billentyuzet.png">
+            <h3 class="text-center" style="color: red"><strong>Jelenleg nem elérhető!</strong></h3>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location()" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding">
             <h2 class="text-center">Egerek</h2>
             <br>
             <img src="files/img/eger.png" id="eger">
+            <h3 class="text-center" style="color: red"><strong>Jelenleg nem elérhető!</strong></h3>
         </div>
     </div>
 </div>
