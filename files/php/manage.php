@@ -27,12 +27,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $jelenido = date("Y-m-d H:i:s");
                 $sql = "INSERT INTO rendelesek (nev, darab, ar, vevo, ido) VALUES ('$nev', '$mennyiseg', '$ar', '$vevo', '$jelenido')";
                 $result1 = mysqli_query($con, $sql);
-                $sum = $sum + $ar;
+                $sum += $ar;
                 if ($result1) {
                     $sql = "DELETE FROM kosar WHERE vevo = '$email'";
                     $result2 = mysqli_query($con, $sql);
                     if ($result2) {
-                        $sql = "UPDATE users SET balance = balance - '$sum' WHERE email = '$email'";
+                        $sql = "UPDATE users SET balance = balance-'$sum' WHERE users.email = '$email'";
                         $result3 = mysqli_query($con, $sql);
                         if ($result3) {
                             $_SESSION['madeAnOrder'] = true;

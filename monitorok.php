@@ -72,6 +72,17 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
     </div>
     <form action="files/php/kosarhandle.php" method="post">
     <div class="row">
+        <?php
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+            if (isset($_SESSION['kosar']) && $_SESSION['kosar'] === true) {
+                echo '<div class="col-11 col-m-10 m-auto alert alert-success alert-dismissible fade show" role="alert">
+                Sikeresen hozzáadva a kosárhoz!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>';
+                $_SESSION['kosar'] = false;
+            }
+        }
+        ?>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding">
                 <h2 class="text-center">Republic of Gamers monitor</h2>
                 <br>

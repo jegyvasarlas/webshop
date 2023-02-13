@@ -105,6 +105,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
                 </form>
             </div>
         </div>';
+            $_SESSION['sum'] = $sum;
             echo $output;
         } else {
             echo '<div class="alert alert-info" role="alert">

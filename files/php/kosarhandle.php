@@ -9,12 +9,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = "INSERT INTO kosar (nev, vevo, termekar) VALUES ('$nev', '$vevo', '$termekar')";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            echo '<div class="alert alert-success" role="alert">Sikeresen hozzáadva a kosárhoz!</div>';
+            $_SESSION['kosar'] = true;
+            header("Location: ../../monitorok.php");
         } else {
-            echo '<div class="alert alert-danger" role="alert">Sikertelen hozzáadás!</div>';
+            echo mysqli_error($con);
         }
-        $_SESSION['kosar'] = true;
-        header("Location: ../../kosar.php");
     }
     if (isset($_POST['samsung'])) {
         $nev = "Samsung monitor";
@@ -23,12 +22,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = "INSERT INTO kosar (nev, vevo, termekar) VALUES ('$nev', '$vevo', '$termekar')";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            echo '<div class="alert alert-success" role="alert">Sikeresen hozzáadva a kosárhoz!</div>';
+            $_SESSION['kosar'] = true;
+            header("Location: ../../monitorok.php");
         } else {
-            echo '<div class="alert alert-danger" role="alert">Sikertelen hozzáadás!</div>';
+            echo mysqli_error($con);
         }
-        $_SESSION['kosar'] = true;
-        header("Location: ../../kosar.php");
     }
     if (isset($_POST['acer'])) {
         $nev = "Acer monitor";
@@ -37,12 +35,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = "INSERT INTO kosar (nev, vevo, termekar) VALUES ('$nev', '$vevo', '$termekar')";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            echo '<div class="alert alert-success" role="alert">Sikeresen hozzáadva a kosárhoz!</div>';
+            $_SESSION['kosar'] = true;
+            header("Location: ../../monitorok.php");
         } else {
-            echo '<div class="alert alert-danger" role="alert">Sikertelen hozzáadás!</div>';
+            echo mysqli_error($con);
         }
-        $_SESSION['kosar'] = true;
-        header("Location: ../../kosar.php");
     }
     if (isset($_POST['lg'])) {
         $nev = "LG monitor";
@@ -51,12 +48,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = "INSERT INTO kosar (nev, vevo, termekar) VALUES ('$nev', '$vevo', '$termekar')";
         $result = mysqli_query($con, $sql);
         if ($result) {
-            echo '<div class="alert alert-success" role="alert">Sikeresen hozzáadva a kosárhoz!</div>';
+            $_SESSION['kosar'] = true;
+            header("Location: ../../monitorok.php");
         } else {
-            echo '<div class="alert alert-danger" role="alert">Sikertelen hozzáadás!</div>';
+            echo mysqli_error($con);
         }
-        $_SESSION['kosar'] = true;
-        header("Location: ../../kosar.php");
     }
 }
 ?>
