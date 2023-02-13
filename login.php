@@ -26,7 +26,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="" class="nav-item nav-link">Termekek</a>
+                <a href="" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link active">Bejelentkezés</a>
@@ -43,6 +43,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     </div>
     <div class="row">
         <div class="col-12">
+            <?php
+            if (isset($_SESSION['successfulRegister']) && $_SESSION['successfulRegister'] == true){
+                echo '<div class="alert alert-success alert-dismissible fade show"><strong>Siker!</strong> Sikeres regisztráció<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+                $_SESSION['successfulRegister'] = false;
+            }
+            ?>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <label for="email">E-mail cim</label>
                 <input type="text" name="email" id="email" class="form-control">

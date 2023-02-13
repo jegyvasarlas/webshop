@@ -33,7 +33,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link">Bejelentkezés</a>
@@ -51,7 +51,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-item nav-link" disabled>Egyenleg: '.Egyenleg().' Ft</a>

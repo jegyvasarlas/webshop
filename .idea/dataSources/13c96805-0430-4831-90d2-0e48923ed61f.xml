@@ -1244,77 +1244,121 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="358" parent="350" name="users">
+    <table id="358" parent="350" name="rendelesek">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <column id="359" parent="357" name="id">
+    <table id="359" parent="350" name="users">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <column id="360" parent="357" name="id">
+      <AutoIncrement>34</AutoIncrement>
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="361" parent="357" name="nev">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="362" parent="357" name="vevo">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="363" parent="357" name="termekar">
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="364" parent="357" name="kosar_users_email_fk">
+      <ColNames>vevo</ColNames>
+      <RefColNames>email</RefColNames>
+      <RefTableName>users</RefTableName>
+    </foreign-key>
+    <index id="365" parent="357" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="366" parent="357" name="kosar_users_email_fk">
+      <ColNames>vevo</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="367" parent="357" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="368" parent="358" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="360" parent="357" name="nev">
+    <column id="369" parent="358" name="nev">
       <DasType>varchar(256)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="361" parent="357" name="vevo">
-      <DasType>varchar(256)|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="370" parent="358" name="darab">
+      <DasType>int(11)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="362" parent="357" name="termekar">
-      <DasType>int(11)|0s</DasType>
+    <column id="371" parent="358" name="ar">
+      <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="363" parent="357" name="kosar_users_email_fk">
-      <ColNames>vevo</ColNames>
-      <RefColNames>email</RefColNames>
-      <RefTableName>users</RefTableName>
-    </foreign-key>
-    <index id="364" parent="357" name="PRIMARY">
+    <column id="372" parent="358" name="vevo">
+      <DasType>varchar(256)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="373" parent="358" name="ido">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="374" parent="358" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="365" parent="357" name="kosar_users_email_fk">
-      <ColNames>vevo</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="366" parent="357" name="PRIMARY">
+    <key id="375" parent="358" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="367" parent="358" name="email">
+    <column id="376" parent="359" name="email">
       <DasType>varchar(256)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="368" parent="358" name="password">
+    <column id="377" parent="359" name="password">
       <DasType>char(40)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="369" parent="358" name="admin">
+    <column id="378" parent="359" name="admin">
       <DasType>int(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="370" parent="358" name="balance">
+    <column id="379" parent="359" name="balance">
       <DasType>int(11)|0s</DasType>
-      <DefaultExpression>100000</DefaultExpression>
+      <DefaultExpression>1000000</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="371" parent="358" name="PRIMARY">
+    <index id="380" parent="359" name="PRIMARY">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="372" parent="358" name="PRIMARY">
+    <key id="381" parent="359" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

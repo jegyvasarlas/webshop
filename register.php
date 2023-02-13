@@ -26,7 +26,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="" class="nav-item nav-link">Termekek</a>
+                <a href="" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link">Bejelentkezés</a>
@@ -197,7 +197,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                 $sql = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
                 if (mysqli_query($con, $sql)) {
                     $_SESSION['successfulRegister'] = true;
-                    echo '<script>window.location.href = "index.php";</script>';
+                    echo '<script>window.location.href = "login.php";</script>';
                 } else {
                     echo '<div class="alert alert-danger"><strong>Hiba!</strong> Sikertelen regisztráció</div>';
                 }

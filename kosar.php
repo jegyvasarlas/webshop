@@ -32,7 +32,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-item nav-link" disabled>Egyenleg: <?php echo Egyenleg(); ?> Ft</a>
@@ -50,6 +50,23 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         </div>
     </div>
     <div class="row">
+        <div class="col-12">
+            <?php
+            if (isset($_SESSION['madeADelete'])) {
+                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                        A kosár tartalma sikeresen törölve lett!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>';
+                unset($_SESSION['madeADelete']);
+            }
+            if (isset($_SESSION['madeAnOrder'])) {
+                echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                        A rendelés sikeresen leadva lett!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                      </div>';
+                unset($_SESSION['madeAnOrder']);
+            }
+            ?>
         <?php
         $con = ConnectDB();
         $vevo = $_SESSION['email'];

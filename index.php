@@ -33,7 +33,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link active">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="login.php" class="nav-item nav-link">Bejelentkezés</a>
@@ -51,7 +51,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link active">Főoldal</a>
-                <a href="termekek.php" class="nav-item nav-link">Termekek</a>
+                <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a class="nav-item nav-link" disabled>Egyenleg: '.Egyenleg().' Ft</a>
@@ -66,12 +66,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
 ?>
 <div class="container" style="margin-top: 20px">
     <?php
-    if (isset($_SESSION['successfulRegister']) && $_SESSION['successfulRegister'] == true){
-        echo '<div class="alert alert-success"><strong>Siker!</strong> Sikeres regisztráció</div>';
-        $_SESSION['successfulRegister'] = false;
-    }
     if (isset($_SESSION['successfulLogin']) && $_SESSION['successfulLogin'] == true) {
-        echo '<div class="alert alert-success"><strong>Siker!</strong> Sikeres bejelentkezés</div>';
+        echo '<div class="alert alert-success alert-dismissible fade show"><strong>Siker!</strong> Sikeres bejelentkezés<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
         $_SESSION['successfulLogin'] = false;
     }
     ?>

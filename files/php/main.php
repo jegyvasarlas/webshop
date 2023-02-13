@@ -60,6 +60,8 @@ function Egyenleg()
     } else {
         $output = "0";
     }
-    return $output[0];
+    $balPlain = $output[0];
+    $bal = number_format($balPlain, 0, ',', ' ');
+    return $bal;
 }
 ?>
