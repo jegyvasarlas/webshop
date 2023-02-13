@@ -19,6 +19,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     <link rel="stylesheet" href="files/css/bootstrap.css">
     <link rel="stylesheet" href="files/css/style.css">
     <script src="files/js/bootstrap.bundle.min.js"></script>
+    <script src="files/js/main.js"></script>
 </head>
 <body>
 <?php
@@ -52,6 +53,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
                 <a href="termekek.php" class="nav-item nav-link active">Termekek</a>
             </div>
             <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link" disabled>Egyenleg: '.Egyenleg().' Ft</a>
                 <a href="rendeleseim.php" class="nav-item nav-link">Rendeléseim</a>
                 <a href="kosar.php" class="nav-item nav-link">Kosár</a>
                 <a href="files/php/logout.php" class="nav-item nav-link">Kijelentkezés</a>
@@ -61,15 +63,32 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
 </nav>';
 }
 ?>
-<div class="container" style="margin-top: 20px">
+<div class="container-fluid" style="margin-top: 20px">
     <div class="row">
         <div class="col-12">
             <h1>Termékeink</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
-            <h2>Termékek</h2>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location.href = 'monitorok.php'" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+            <h2 class="text-center">Laptopok</h2>
+            <br>
+            <img src="files/img/laptop.png">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location.href = 'monitorok.php'" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+            <h2 class="text-center">Monitorok</h2>
+            <br>
+            <img src="files/img/monitor.png">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location()" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+            <h2 class="text-center">Billentyűzetek</h2>
+            <br>
+            <img src="files/img/billentyuzet.png">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 padding" onclick="window.location()" onmouseover="this.style.backgroundColor = 'rgb(13 110 253 / 16%)';" onmouseleave="this.style.backgroundColor = '#fff';">
+            <h2 class="text-center">Egerek</h2>
+            <br>
+            <img src="files/img/eger.png" id="eger">
         </div>
     </div>
 </div>

@@ -16,3 +16,27 @@ a.actual-link:visited{
     color: #0d6efd;
     text-decoration: none;
 }
+div.padding {
+    padding: 10px;
+}
+div.row {
+    margin-bottom: 10px;
+}
+div.row.h2
+{
+    text-align: center;
+}
+img{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+bg-item:hover{
+    background-color: #eee;
+}
+
+img#eger{
+    width: 30%;
+    margin: auto;
+    display: flex;
+}

@@ -46,4 +46,20 @@ function SaltPassword($password)
     $password = $password . $salt;
     return $password;
 }
+
+function Egyenleg()
+{
+    $sql = "SELECT balance FROM users WHERE email = '" . $_SESSION['email'] . "'";
+    $con = ConnectDB();
+    $result = $con->query($sql);
+    $output = array();
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            array_push($output, $row["balance"]);
+        }
+    } else {
+        $output = "0";
+    }
+    return $output[0];
+}
 ?>
