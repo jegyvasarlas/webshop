@@ -72,13 +72,11 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
     }
     ?>
     <div class="row">
-        <div class="col-12">
-            <h1>Üdvözöllek a webáruházban!</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h2>Termékek</h2>
+        <div class="col-10 col-md-10 col-lg-10 cl-xl-10 p-lg-5 mx-auto">
+            <h1 class="display-5 font-weight-normal">Számítástechnikai szaküzlet</h1>
+            <p class="lead display-7"><strong>Üdvözlünk webáruházunkban!</strong></p>
+            <p class="lead">Mindent megteszünk annak érdekében, hogy önnek a legjobb vásárlási élményt biztosítsuk. A kiváló minőségű termékeink mellett kiemelkedő ügyfélszolgálatot és gyors szállítást kínálunk. Ha bármilyen kérdése van a termékeinkkel kapcsolatban, vagy szüksége van segítségre, kérjük, ne habozzon felvenni velünk a kapcsolatot.</p>
+            <p class="lead">Üdvözlettel, a számítástechnikai szaküzlet csapata.</p>
         </div>
     </div>
 </div>
