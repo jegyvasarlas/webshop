@@ -77,7 +77,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
                 }
                 echo "</tbody></table></div></div>";
             } else {
-                echo "<div class='alert alert-danger' role='alert'>Nincs megjeleníthető rendelés!</div>";
+                echo "<div class='alert alert-info' role='alert'>Nincs megjeleníthető rendelés!</div>";
             }
             ?>
         </div>

@@ -107,8 +107,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
         </div>';
             echo $output;
         } else {
-            echo '<div class="alert alert-warning" role="alert">
-                    A kosar üres!
+            echo '<div class="alert alert-info" role="alert">
+                    A kosár üres!
                   </div>';
         }
         ?>
