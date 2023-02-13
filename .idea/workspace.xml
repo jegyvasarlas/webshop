@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d4a622a-a1dd-4d4e-990b-d2a66860f54a" name="Changes" comment="Safe">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/specifikacio.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$ecifikacio.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,8 @@
       <workItem from="1675934614180" duration="399000" />
       <workItem from="1676019178332" duration="514000" />
       <workItem from="1676022674591" duration="9956000" />
-      <workItem from="1676249904817" duration="11671000" />
+      <workItem from="1676249904817" duration="12520000" />
+      <workItem from="1676268566741" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675766946059</created>
@@ -189,7 +192,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676264008906</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Safe">
+      <created>1676264351681</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676264351681</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Safe">
+      <created>1676264528767</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676264528767</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
