@@ -35,7 +35,6 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] === false) {
                 <a href="termekek.php" class="nav-item nav-link">Termékek</a>
             </div>
             <div class="navbar-nav ms-auto">
-                <a class="nav-item nav-link" disabled>Egyenleg: <?php echo Egyenleg(); ?> Ft</a>
                 <a href="rendeleseim.php" class="nav-item nav-link">Rendeléseim</a>
                 <a href="kosar.php" class="nav-item nav-link active">Kosár</a>
                 <a href="files/php/logout.php" class="nav-item nav-link">Kijelentkezés</a>
